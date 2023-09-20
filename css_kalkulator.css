@@ -1,0 +1,87 @@
+body {
+  background-image: url("assets/background.svg");
+}
+
+.main {
+  text-align: center;
+  color: blue;
+  font-family: bold;
+}
+#tanggal {
+  text-align: left;
+  color: orange;
+  font-weight: 600;
+}
+#jam {
+  text-align: right;
+  color: yellow;
+  font-weight: 500;
+}
+#abc {
+  font-family: "times new roman";
+  color: #000000 !important;
+  font-size: 16px;
+  text-shadow: 1px 1px 0px #ffffff;
+  box-shadow: 1px 1px 1px #bee2f9;
+  padding: 4px 25px;
+  border-radius: 10px;
+  border: 2px solid #3866a3;
+  background: #eee713;
+}
+
+#angka1,
+#angka2,
+#Operator,
+#hasil {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #000000;
+  padding: 10px 25px;
+  border-radius: 24px;
+  font-size: 18px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+
+svg {
+  font-family: "Sofia Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  animation: stroke 8s infinite alternate;
+  stroke-width: 2;
+  stroke: red;
+  font-size: 67px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(244, 125, 14, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+.huruf {
+  color: red;
+  font-weight: bold;
+  padding-top: 30%;
+}

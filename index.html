@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" "id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="css_kalkulator.css" />
+  <body>
+
+    <div class="animasi">
+      <svg>
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			Kalkulator sederhana
+		</text>
+	</svg>
+    </div>
+    <div class="new">
+      <div id="tanggal"></div>
+      <div id="jam"></div>
+    </div>
+    
+    <div class="main">
+      <label for="angka1"><p1 class="huruf">angka pertama</p1></label><br />
+      <input id="angka1" type="number" /><br />
+      <label for="angka2"><p1 class="huruf">angka kedua</p1></label><br />
+      <input id="angka2" type="number" /><br />
+      <p4 class="huruf">Operasi Hitung</p4>
+
+      <label for="Operator"></label> <br />
+      <select id="Operator" name="operator">
+        <option value="+">tambah (plus)</option>
+        <option value="-">kurang (minus)</option>
+        <option value="*">kali (Multiple)</option>
+        <option value="bg">Bagi</option>
+        <option value="dvd">sisa bagi</option>
+        <option value="pgt">pangkat</option>
+      </select><br>
+      <button id="abc" onclick="akhir()">hitung</button><br>
+      <input type"text" id="hasil" placeholder="Hasil hitungan"/><br>
+      <button type="button" onclick="location.reload()">ulangi</button>
+    </div>
+    
+  </body>
+
+  <script src="kalkulator_script.js"></script>
+</html>
